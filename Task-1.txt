@@ -1,0 +1,71 @@
+1. Write a blog on Difference between HTTP1.1 vs HTTP2
+
+     HTTP stands for hypertext transfer protocol and it is used in client-server communication. 
+   By using HTTP user sends the request to the server & the server sends the response to the user.
+
+   HTTP1.1:
+
+   -> It works on the textual format.
+   -> There is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources.
+   -> It uses requests resource Inlining for use getting multiple pages.
+   -> It compresses data by itself.
+
+   HTTP2:
+
+   -> It works on the binary protocol.
+   -> It allows multiplexing so one TCP connection is required for multiple requests.
+   -> It uses PUSH frame by server that collects all multiple pages 
+   -> It uses HPACK for data compression.
+   
+
+2. Write a blog about objects and its internal representation in Javascript
+
+    Objects is the most important data-type in javascript and forms the building blocks of elements. Objects are quite different from Javascript's
+   Primitive data-types(Number, Boolean, String, Undefined, Null and symbols). Depending on there types of primitive data-types all store single value.
+   
+     objects in JavaScript may be defined as an unordered collection of related data, of primitive or reference types, in the form of “key: value” pairs. 
+   These keys can be variables or functions and are called properties and methods, respectively, in the context of an object.
+     
+   Creating Objects in JavaScript:
+    -> By object literal
+    -> By creating instance of Object directly (using new keyword)
+	
+   By object literal:
+     . Property and value is separated by colon(:).
+	 
+	 Syntax:
+	   object={property1:value1,property2:value2,.......,propertyN:valueN}
+
+     Example1:
+	   var person={
+	        firstName="sanjith",
+	        lastName="kumar",
+		age=25
+		};
+
+
+   By creating instance of Object directly (using new keyword):
+     . Here, new keyword is used to create object.
+	 
+	 Syntax:
+	   var objectName=new object();
+
+     Example2:
+	   var emp=new object();
+	         emp.Id=100;
+		 emp.name="sanjith";
+		 emp.age=25;
+
+
+   Accessing JavaScript Objects:
+     The syntax for accessing the property of an object is:
+
+         objectName.property
+                 or
+         objectName[“property”]
+
+   Accessing ‘fistName’ from example1 using dot operator,
+         person.firstName
+
+   Accessing ‘name’ form example2 using [],
+         emp["name"]
